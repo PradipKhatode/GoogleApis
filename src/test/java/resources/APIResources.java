@@ -2,7 +2,8 @@ package resources;
 
 public enum APIResources {
 
-    AddPlacesAPI("maps/api/place/add/json");
+    AddPlacesAPI("maps/api/place/add/json"),
+    getPlaceAPI("maps/api/place/get/json");
 
     private String resource;
 
