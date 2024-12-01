@@ -12,9 +12,9 @@ Multiparts:		<none>
 Body:
 {
     "accuracy": 50,
-    "name": "Rahul",
+    "name": "AAhouse",
     "phone_number": "(+91) 983 893 3937",
-    "address": "NAshik",
+    "address": "World cross center",
     "website": "https://rahulshettyacademy.com",
     "language": "English",
     "types": [
@@ -27,7 +27,7 @@ Body:
     }
 }
 HTTP/1.1 200 OK
-Date: Sun, 01 Dec 2024 17:25:25 GMT
+Date: Sun, 01 Dec 2024 18:15:26 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,17 +40,17 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "aaf0cb8366f7b01861b91d3dae9cc96b",
+    "place_id": "2fe2aded9c7e5270c6472ffa004510cf",
     "scope": "APP",
-    "reference": "1c5578a71bcf2ddcf3ebb8730955b4931c5578a71bcf2ddcf3ebb8730955b493",
-    "id": "1c5578a71bcf2ddcf3ebb8730955b493"
+    "reference": "13468c39c3e6336e28d304ea0aa6849c13468c39c3e6336e28d304ea0aa6849c",
+    "id": "13468c39c3e6336e28d304ea0aa6849c"
 }
 Request method:	GET
-Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=aaf0cb8366f7b01861b91d3dae9cc96b
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=2fe2aded9c7e5270c6472ffa004510cf
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=qaclick123
-				place_id=aaf0cb8366f7b01861b91d3dae9cc96b
+				place_id=2fe2aded9c7e5270c6472ffa004510cf
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -59,13 +59,13 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Sun, 01 Dec 2024 17:25:26 GMT
+Date: Sun, 01 Dec 2024 18:15:27 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
 Access-Control-Max-Age: 3600
 Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
-Content-Length: 230
+Content-Length: 244
 Keep-Alive: timeout=5, max=99
 Connection: Keep-Alive
 Content-Type: application/json;charset=UTF-8
@@ -76,9 +76,9 @@ Content-Type: application/json;charset=UTF-8
         "longitude": "56.89"
     },
     "accuracy": "50",
-    "name": "Rahul",
+    "name": "AAhouse",
     "phone_number": "(+91) 983 893 3937",
-    "address": "NAshik",
+    "address": "World cross center",
     "types": "shoe park,shop",
     "website": "https://rahulshettyacademy.com",
     "language": "English"
@@ -96,10 +96,10 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "place_id": "aaf0cb8366f7b01861b91d3dae9cc96b"
+    "place_id": "2fe2aded9c7e5270c6472ffa004510cf"
 }
 HTTP/1.1 200 OK
-Date: Sun, 01 Dec 2024 17:25:28 GMT
+Date: Sun, 01 Dec 2024 18:15:28 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
