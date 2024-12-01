@@ -1,6 +1,7 @@
 Feature: Validating Place API's
 
-  Scenario Outline: Verify if place is being successfully added using AddPlaceAPI
+@AddPlace  # @AddPlace is tags used for executing single testcases
+Scenario Outline: Verify if place is being successfully added using AddPlaceAPI
     Given Add Place Payload with "<name>" "<language>" "<address>"
     When user calls "AddPlacesAPI" with "Post" http request
     Then the API call got success with status code 200
@@ -13,7 +14,8 @@ Examples:
   | AAhouse | English  | World cross center |
   #| FrontHouse | Spanish  | Sea cross center   |
 
-  Scenario: Verify if the place is being deleted successfully;
+@DeletePlace
+Scenario: Verify if the place is being deleted successfully;
     Given delete place payload
     When user calls "deletePlaceAPI" with "Post" http request
     Then the API call got success with status code 200
