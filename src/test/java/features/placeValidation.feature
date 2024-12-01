@@ -13,3 +13,8 @@ Examples:
   | AAhouse | English  | World cross center |
   #| FrontHouse | Spanish  | Sea cross center   |
 
+  Scenario: Verify if the place is being deleted successfully;
+    Given delete place payload
+    When user calls "deletePlaceAPI" with "Post" http request
+    Then the API call got success with status code 200
+    And "status" in response body is "OK"
