@@ -39,7 +39,7 @@
                             <!-- Ensure outputDirectory is correctly set -->
                             <outputDirectory>${project.build.directory}/cucumber-report</outputDirectory>
                             <!-- Correct the inputDirectory -->
-                            <inputDirectory>${project.build.directory}</inputDirectory>
+                            <inputDirectory>${project.build.directory}/jsonReports</inputDirectory>
                             <!-- Specify the actual json files, make sure it matches the location -->
                             <jsonFiles>
                                 <param>**/cucumber.json</param>  <!-- Adjust if the file has a different name or pattern -->
