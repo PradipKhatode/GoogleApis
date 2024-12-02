@@ -25,7 +25,7 @@
             <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
-                <version>5.8.4</version>
+                <version>5.8.2</version>
                 <executions>
                     <execution>
                         <id>execution</id>
@@ -35,23 +35,18 @@
                         </goals>
                         <configuration>
                             <projectName>cucumber-jvm-example</projectName>
-                            <!-- optional, per documentation set this to "true" to bypass generation of Cucumber Reports entirely, defaults to false if not specified -->
                             <skip>false</skip>
-                            <!-- output directory for the generated report -->
-                            <outputDirectory>${project.build.directory}</outputDirectory>
-                            <!-- optional, defaults to outputDirectory if not specified -->
-                            <inputDirectory>${project.build.directory}/jsonReports</inputDirectory>
+                            <!-- Ensure outputDirectory is correctly set -->
+                            <outputDirectory>${project.build.directory}/cucumber-report</outputDirectory>
+                            <!-- Correct the inputDirectory -->
+                            <inputDirectory>${project.build.directory}</inputDirectory>
+                            <!-- Specify the actual json files, make sure it matches the location -->
                             <jsonFiles>
-                                <!-- supports wildcard or name pattern -->
-                                <param>**/*.json</param>
+                                <param>**/cucumber.json</param>  <!-- Adjust if the file has a different name or pattern -->
                             </jsonFiles>
-                            <!-- optional, defaults to outputDirectory if not specified -->
                             <parallelTesting>false</parallelTesting>
-                            <!-- optional, set true to group features by its Ids -->
                             <mergeFeaturesById>false</mergeFeaturesById>
-                            <!-- optional, set true to get a final report with latest results of the same test from different test runs -->
                             <mergeFeaturesWithRetest>false</mergeFeaturesWithRetest>
-                            <!-- optional, set true to fail build on test failures -->
                             <checkBuildResult>false</checkBuildResult>
                         </configuration>
                     </execution>
@@ -59,6 +54,7 @@
             </plugin>
         </plugins>
     </build>
+
     <dependencies>
         <dependency>
             <groupId>io.rest-assured</groupId>
