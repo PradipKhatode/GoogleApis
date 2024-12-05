@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/java/features",
         plugin = "json:target/jsonReports/cucumber.json",
-        glue={"stepDefinations"})
-        //tags= "@DeletePlace")
+        glue={"stepDefinations"},
+        tags= "@DeletePlace")
 public class TestRunner {
 
 }
