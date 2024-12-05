@@ -1,6 +1,6 @@
 Feature: Validating Place API's
 
-@AddPlace  # @AddPlace is tags used for executing single testcases
+@AddPlace @Regression # @AddPlace is tags used for executing single testcases
 Scenario Outline: Verify if place is being successfully added using AddPlaceAPI
     Given Add Place Payload with "<name>" "<language>" "<address>"
     When user calls "AddPlacesAPI" with "Post" http request
@@ -12,9 +12,9 @@ Scenario Outline: Verify if place is being successfully added using AddPlaceAPI
 Examples:
   | name    | language | address            |
   | AAhouse | English  | World cross center |
-  #| FrontHouse | Spanish  | Sea cross center   |
+  | FrontHouse | Spanish  | Sea cross center   |
 
-@DeletePlace
+@DeletePlace @Regression
 Scenario: Verify if the place is being deleted successfully;
     Given delete place payload
     When user calls "deletePlaceAPI" with "Post" http request
